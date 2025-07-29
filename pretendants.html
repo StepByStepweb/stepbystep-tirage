@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StepByStep - Découvrez vos prétendants</title>
+    <link rel="stylesheet" href="pretendants.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>StepByStep</h1>
+            <p class="slogan">Votre plaisir, notre priorité</p>
+        </header>
+        <section class="intro">
+            <h2>Votre cadeau exclusif !</h2>
+            <p>Chère [son prénom], <br> Parce que votre satisfaction est au cœur de StepByStep, nous vous offrons la possibilité de contacter gratuitement et discrètement un nouveau prétendant passionné. Découvrez nos suggestions ci-dessous et choisissez celui qui fera battre votre cœur !</p>
+        </section>
+        <section class="carousel">
+            <h3>Vos prétendants StepByStep</h3>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="pretendant1.jpg" alt="Prétendant 1">
+                    <p>[Ton prénom] en mode aventurier</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="pretendant2.jpg" alt="Prétendant 2">
+                    <p>[Ton prénom] version romantique</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="pretendant3.jpg" alt="Prétendant 3">
+                    <p>[Ton prénom] en rockstar</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="pretendant4.jpg" alt="Prétendant 4">
+                    <p>[Ton prénom] en chef cuistot</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="pretendant5.jpg" alt="Prétendant 5">
+                    <p>Gérard, 78 ans, amateur de pétanque</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="pretendant6.jpg" alt="Prétendant 6">
+                    <p>Big Bob, champion de barbecue</p>
+                </div>
+            </div>
+            <button class="prev">←</button>
+            <button class="next">→</button>
+        </section>
+        <section class="form-section">
+            <h3>Envoyez un message à votre prétendant préféré</h3>
+            <a href="LIEN_VERS_TON_GOOGLE_FORM" target="_blank">
+                <button>Envoyer un message</button>
+            </a>
+            <p class="note">* Votre message sera traité en toute discrétion par notre équipe Plaisir Client.</p>
+        </section>
+        <footer>
+            <p>StepByStep &copy; 2025 - Créé avec ❤️ pour les amoureux qui avancent pas à pas.</p>
+        </footer>
+    </div>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        prev.addEventListener('click', () => {
+            slideIndex = (slideIndex > 0) ? slideIndex - 1 : slides.length - 1;
+            showSlide(slideIndex);
+        });
+
+        next.addEventListener('click', () => {
+            slideIndex = (slideIndex < slides.length - 1) ? slideIndex + 1 : 0;
+            showSlide(slideIndex);
+        });
+
+        showSlide(slideIndex);
+    </script>
+</body>

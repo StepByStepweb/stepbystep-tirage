@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fond.jpg'); /* Même image de fond que la page précédente */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 3em;
+    color: #d81b60;
+    margin: 0;
+}
+
+.slogan {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
+
+.intro {
+    margin: 20px 0;
+}
+
+.intro h2 {
+    color: #d81b60;
+    font-size: 1.8em;
+}
+
+.carousel {
+    margin: 20px 0;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.carousel-slide {
+    display: none;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-slide p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #d81b60;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #d81b60;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.form-section {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #d81b60;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #b0003a;
+}
+
+.note {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #666;
+}
